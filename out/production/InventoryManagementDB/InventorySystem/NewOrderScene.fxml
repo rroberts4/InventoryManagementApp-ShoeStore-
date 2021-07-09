@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventorySystem.CreateOrderSceneController">
+   <children>
+      <VBox layoutX="193.0" layoutY="96.0" prefHeight="594.0" prefWidth="398.0" spacing="32.0">
+         <children>
+            <TextField promptText="Manufactur's Name" />
+            <TextField layoutX="10.0" layoutY="10.0" promptText="Identification Number" />
+            <TextField layoutX="10.0" layoutY="35.0" promptText="Brand" />
+            <TextField layoutX="10.0" layoutY="60.0" promptText="SHOE or SOCK" />
+            <TextField layoutX="10.0" layoutY="60.0" promptText="UPC" />
+            <TextField layoutX="10.0" layoutY="60.0" promptText="Name" />
+            <TextField layoutX="10.0" layoutY="60.0" promptText="Price Point" />
+            <TextField layoutX="10.0" layoutY="85.0" promptText="Color" />
+            <TextField layoutX="10.0" layoutY="85.0" promptText="Size" />
+            <TextField layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="347.0" promptText="Quantity " />
+            <TextField layoutX="10.0" layoutY="541.0" prefHeight="25.0" prefWidth="347.0" promptText="YEAR-MM-DD            " />
+         </children>
+      </VBox>
+      <VBox layoutX="7.0" layoutY="94.0" prefHeight="606.0" prefWidth="177.0" spacing="32.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="167.0" text="Manufactur Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="167.0" text="Manufacturing ID">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="167.0" text="Brand Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="174.0" text="Product Type">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="72.0" prefHeight="19.0" prefWidth="168.0" text="Product UPC">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="167.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="167.0" text="Product Retail Price">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="72.0" prefHeight="28.0" prefWidth="167.0" text="Product Color">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="258.0" prefHeight="28.0" prefWidth="167.0" text="Product Size">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="258.0" prefHeight="17.0" prefWidth="167.0" text="Quantity Request">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="546.0" prefHeight="2.0" prefWidth="167.0" text="Date">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="8.0" layoutY="7.0" prefHeight="74.0" prefWidth="754.0">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="115.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/orders.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="73.0" prefWidth="504.0" text="  New Order Information">
+               <font>
+                  <Font name="Britannic Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

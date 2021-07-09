@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventorySystem.RegisterSceneController">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="104.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/about.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="132.0" layoutY="15.0" prefHeight="86.0" prefWidth="558.0" text="Employee Register">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="120.0" layoutY="167.0" prefHeight="519.0" prefWidth="540.0" spacing="6.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="91.0" text="First Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstnameTextfield" prefHeight="25.0" prefWidth="336.0" promptText="First Name" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="91.0" text="Last Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastnameTextfield" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="336.0" promptText="Last Name" />
+            <Label layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="91.0" text="Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTextfield" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="336.0" promptText="Email" />
+            <Label layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="91.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextfield" layoutX="10.0" layoutY="135.0" prefHeight="25.0" prefWidth="336.0" promptText="Username" />
+            <Label layoutX="10.0" layoutY="160.0" prefHeight="25.0" prefWidth="91.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <HBox prefHeight="26.0" prefWidth="540.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="140.0" text="Confirm Password">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="315.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <PasswordField fx:id="confirmPasswordField" layoutX="10.0" layoutY="289.0" promptText="Confirm Password" />
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonAction" prefHeight="40.0" prefWidth="540.0" text="Register">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="10.0" layoutY="346.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="40.0" prefWidth="540.0" text="Exit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="registerMessageLabel" alignment="TOP_CENTER" layoutX="117.0" layoutY="116.0" prefHeight="40.0" prefWidth="540.0" textFill="#100f0f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

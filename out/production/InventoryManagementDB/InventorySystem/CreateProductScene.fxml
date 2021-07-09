@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventorySystem.CreateProductSceneController">
+    <children>
+        <ImageView fitHeight="111.0" fitWidth="104.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true">
+            <image>
+                <Image url="@images/shoes.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="132.0" layoutY="15.0" prefHeight="86.0" prefWidth="558.0" text="Create New Inventory Product">
+            <font>
+                <Font name="Britannic Bold" size="36.0" />
+            </font>
+        </Label>
+        <VBox layoutX="120.0" layoutY="167.0" prefHeight="520.0" prefWidth="540.0" spacing="10.0">
+            <children>
+                <Label prefHeight="25.0" prefWidth="118.0" text="Product Brand">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            <ComboBox fx:id="brandComboBox" prefHeight="25.0" prefWidth="533.0" promptText="Brand Name" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="116.0" text="Product Type">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="typeComboBox" layoutX="10.0" layoutY="41.0" prefHeight="25.0" prefWidth="533.0" promptText="Product Type" />
+                <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="136.0" text="Product UPC">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="upcTextfield" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="336.0" promptText="UPC Number" />
+                <Label layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="128.0" text="Product Name">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameTextfield" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="336.0" promptText="Product Name" />
+                <Label layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="115.0" text="Product Color">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            <ComboBox fx:id="colorComboBox" layoutX="10.0" layoutY="115.0" prefHeight="25.0" prefWidth="533.0" promptText="Product Color" />
+            <HBox layoutX="10.0" layoutY="382.0" prefHeight="50.0" prefWidth="540.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="117.0" text="Product Price">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="priceTextfield" prefHeight="25.0" prefWidth="124.0" promptText="Example:  99.99" />
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="117.0" text="  Product Size">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="sizeComboBox" prefHeight="17.0" prefWidth="76.0" promptText="Size" />
+               </children>
+            </HBox>
+                <HBox prefHeight="50.0" prefWidth="540.0">
+                    <children>
+                        <Label prefHeight="25.0" prefWidth="117.0" text="Inventory Count">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                  <TextField fx:id="countTextfield" prefHeight="25.0" prefWidth="124.0" promptText="Inventory Count" />
+                    </children>
+                </HBox>
+                <Button fx:id="addItemButton" mnemonicParsing="false" onAction="#addItemButtonAction" prefHeight="40.0" prefWidth="540.0" text="Add New Item">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="exitButton" layoutX="10.0" layoutY="346.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="40.0" prefWidth="540.0" text="Exit">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <Label fx:id="productMessageLabel" alignment="TOP_CENTER" layoutX="117.0" layoutY="116.0" prefHeight="40.0" prefWidth="540.0" textFill="#100f0f">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Label fx:id="newLabel" layoutX="662.0" layoutY="58.0" prefHeight="71.0" prefWidth="115.0" />
+    </children>
+</AnchorPane>
