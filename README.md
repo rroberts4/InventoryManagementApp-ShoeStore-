@@ -1,7 +1,6 @@
 # InventoryManagementApp-ShoeStore-
 This application manages a shoe store's active inventory, product shipments , product orders, and employees.
 
-///////////////////////////////////////////////////////////////////////////////
 // Title:           InventoryManagementApp-ShoeStore-
 // Date:            June 2021
 //
@@ -18,4 +17,4 @@ This application manages a shoe store's active inventory, product shipments , pr
  * All table lists and employee login info are stored using a MYSQL Database.
  * After employees login they are able to add new product inventory items and request mutiple orders.
  */
-///////////////////////////////////////////////////////////////////////////////
+
